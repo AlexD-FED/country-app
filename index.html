@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <title>Country information</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="container">
+    <div>
+        <h1>Welcome to Country Roulette</h1>
+        <img src="https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif" alt="world globe"/>
+        <h3>About what country would you like to know more?</h3>
+    </div>
 
+    <div>
+        <label for="searchText"></label>
+        <input type="text" onfocus="this.value=''" value="search country..." id="searchText" placeholder="Start searching by country..."/>
+        <button id="searchButton"> SEARCH </button>
+    </div>
+
+    <div id="resultsCountry">
+        <img id="flagImage" src="" alt=""/>
+        <div id="countryInfo"></div>
+    </div>
+</div>
+
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
